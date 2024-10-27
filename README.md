@@ -20,11 +20,6 @@ Para poder usar el servicio, se tienen que tener presente las siguientes conside
 6. modificar los nombres de las llaves, ingresando sus credenciales de acceso a la api
    de Amadeus.
 
-    > [!IMPORTANT]
-    > Dejo mis credenciales de acceso por si no tienen las suyas, no las quise suministrar directamente en el archivo de variables de entorno porque sé que es una mala practica guardar ese tipo de información en un repositorio publico, pero para efectos de pruebas , las dejare aca y luego borrare el repositorio
-    > [!WARNING]
-    > La variable de entorno de `PORT` es obligatoria ponerla para que el sistema pueda correr, el servicio no asume un puerto por defecto, entonces el usuario debe de saber que puertos tiene disponible su servidor para correr este aplicativo
-
     ```cmd
     API_KEY_AMADEUS=YQeKbBy9rAeNExdxGPEaOkAqHUBHAMIY
     API_KEY_SECRET=23O1HXSCJA7JTAFo
@@ -33,6 +28,11 @@ Para poder usar el servicio, se tienen que tener presente las siguientes conside
 7. una vez haya terminado de ingresar las variables de entorno, en la misma consola usar el comando `npm run start`
 8. En la consola debe de salir un aviso que dice `Server running on port 4000`,
    es posible que pueda aparecer un aviso adicional diciéndote que tienes que escribir las credenciales en el archivo del variables de entorno `.env`
+
+> [!IMPORTANT]
+> Dejo mis credenciales de acceso por si no tienen las suyas, no las quise suministrar directamente en el archivo de variables de entorno porque sé que es una mala practica guardar ese tipo de información en un repositorio publico, pero para efectos de pruebas , las dejare aca y luego borrare el repositorio
+> [!WARNING]
+> La variable de entorno de `PORT` es obligatoria ponerla para que el sistema pueda correr, el servicio no asume un puerto por defecto, entonces el usuario debe de saber que puertos tiene disponible su servidor para correr este aplicativo
 
 ## Endpoints de la aplicación
 
