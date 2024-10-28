@@ -1,10 +1,10 @@
-# Documentación Pruebas técnicas para aspiración del cargo de desarrollador backend en Developer Roads
+# Documentación Pruebas técnicas para aspiración del cargo de desarrollador backend en Different Roads
 
-Para poder usar el servicio, se tienen que tener presente las siguientes consideraciones :
+Para poder usar el servicio, se debe tener presente las siguientes consideraciones :
 
 1. Tener Nodejs instalado localmente en su computador
 2. Descargar el código que se encuentra en este repositorio
-3. Luego ingresar al directorio raíz, que tiene la siguiente forma:
+3. Luego se debe de ingresar al directorio raíz, que tiene la siguiente forma:
 
 ```shell
     -src
@@ -17,12 +17,13 @@ Para poder usar el servicio, se tienen que tener presente las siguientes conside
 
 4. abrir la consola de Windows/Mac/Linux y usar el siguiente comando `npm install`
 5. cambiar el nombre del archivo `.env.template` por `.env`
-6. modificar los nombres de las llaves, ingresando sus credenciales de acceso a la api
+6. modificar los valores de las llaves, ingresando sus credenciales de acceso a la api
    de Amadeus.
 
     ```cmd
     API_KEY_AMADEUS=YQeKbBy9rAeNExdxGPEaOkAqHUBHAMIY
     API_KEY_SECRET=23O1HXSCJA7JTAFo
+    PORT=3000
     ```
 
 7. una vez haya terminado de ingresar las variables de entorno, en la misma consola usar el comando `npm run start`
@@ -33,11 +34,11 @@ Para poder usar el servicio, se tienen que tener presente las siguientes conside
 > Dejo mis credenciales de acceso por si no tienen las suyas, no las quise suministrar directamente en el archivo de variables de entorno porque sé que es una mala practica guardar ese tipo de información en un repositorio publico, pero para efectos de pruebas , las dejare aca y luego borrare el repositorio
 
 > [!WARNING]
-> La variable de entorno de `PORT` es obligatoria ponerla para que el sistema pueda correr, el servicio no asume un puerto por defecto, entonces el usuario debe de saber que puertos tiene disponible su servidor para correr este aplicativo
+> La variable de entorno de `PORT` es obligatoria ponerla para que el sistema pueda correr, el servicio no asume un puerto por defecto, entonces el usuario debe de saber que puertos tiene disponibles su servidor para correr este aplicativo
 
 ## Endpoints de la aplicación
 
-A continuación, se va a suministrar información de todos los endpoints para consumir la API de Different Roads :
+A continuación, se va a suministrar la información de todos los endpoints para consumir la API de Different Roads :
 
 ### Buscar disponibilidad del hotel
 
@@ -151,7 +152,7 @@ En el body se debe de enviar un archivo de tipo JSON con la siguiente estructura
 ```
 
 > [!IMPORTANT]
-> Tuve muchos problemas al momento de darle el formato que solicitaba el ejercicio, porque por ejemplo el endpoint que extraer la calificación de los hoteles no funcionaba bien, nunca retorno algún dato en concreto que mencionara la puntuación del hotel.
+> Tuve muchos problemas al momento de darle el formato que solicitaba el ejercicio, porque por ejemplo el endpoint que extrae la calificación de los hoteles no funcionaba bien, nunca retorno algún dato en concreto que mencionara la puntuación del hotel.
 
 > [!IMPORTANT]
 > El endpoint de Amadeus para traerse la información de la direcciones del hotel, tampoco funcionaba bien, no mostraba direcciones (al menos las ciudades que estuve probando), solo aparece el `countryCode` en la llave que se suponía que iba a ser la dirección del hotel
